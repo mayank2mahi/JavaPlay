@@ -37,7 +37,7 @@ public class Solution {
         int t = sc.nextInt();
         sc.nextLine(); // consume leftover newline
 
-        Grain[] grains = new Grain[t];
+        Grain[] arr = new Grain[t];
 
         for (int i = 0; i < t; i++) {
             int a = sc.nextInt();      // grainId
@@ -47,19 +47,19 @@ public class Solution {
             int d = sc.nextInt();      // qtyInQuintal
             sc.nextLine();             // consume newline
 
-            grains[i] = new Grain(a, b, c, d);
+            arr[i] = new Grain(a, b, c, d);
         }
 
         String provideName = sc.nextLine();
 
-        int count = countGrainByGivenName(grains, provideName);
+        int count = countGrainByGivenName(arr, provideName);
         if (count > 0) {
             System.out.println(count);
         } else {
             System.out.println("No Grains with matching names are found");
         }
 
-        Grain minGrain = getMinGrainFromMaharashtra(grains);
+        Grain minGrain = getMinGrainFromMaharashtra(arr);
         if (minGrain != null) {
             System.out.println(minGrain.getGrainId());
             System.out.println(minGrain.getGrainName());
