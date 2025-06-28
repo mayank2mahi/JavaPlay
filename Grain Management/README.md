@@ -69,6 +69,7 @@ WHEAT
 Maharashtra
 300
 113
+Rice
 MAHARASHTRA
 200
 114
