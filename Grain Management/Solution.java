@@ -72,19 +72,19 @@ public class Solution {
         sc.close();
     }
 
-    public static int countGrainByGivenName(Grain[] arr, String name) {
+    public static int countGrainByGivenName(Grain[] a, String n) {
         int c = 0;
-        for (Grain g : arr) {
-            if (g.getGrainName().equalsIgnoreCase(name)) {
+        for (Grain g : a) {
+            if (g.getGrainName().equalsIgnoreCase(n)) {
                 c++;
             }
         }
         return c;
     }
 
-    public static Grain getMinGrainFromMaharashtra(Grain[] arr) {
+    public static Grain getMinGrainFromMaharashtra(Grain[] a) {
         Grain result = null;
-        for (Grain g : arr) {
+        for (Grain g : a) {
             if (g.getState().equalsIgnoreCase("Maharashtra")) {
                 if (result == null || g.getQtyInQuintal() < result.getQtyInQuintal()) {
                     result = g;
