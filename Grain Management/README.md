@@ -60,23 +60,26 @@ Also, write the code for accepting the inputs and printing the outputs. Don't us
 ### Sample Input:
 ```text
 4
+
 111
 Rice
 TamilNadu
 500
+
 112
 WHEAT
 Maharashtra
 300
+
 113
-Rice
+RICE
 MAHARASHTRA
 200
+
 114
 Millet
 TamilnNadu
 400
-rice
 ```
 
 ### Sample Output:
