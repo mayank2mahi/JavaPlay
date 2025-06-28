@@ -80,6 +80,8 @@ MAHARASHTRA
 Millet
 TamilnNadu
 400
+
+Rice
 ```
 
 ### Sample Output:
