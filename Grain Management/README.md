@@ -119,3 +119,23 @@ Scanner sc = new Scanner(System.in);
 int x = sc.nextInt();
 sc.nextLine();
 String str = sc.nextLine();
+
+## 📝 Notes
+
+- All string comparisons are **case-insensitive**.
+- Avoid formatting the output — just print as specified.
+- If facing issues while reading strings after numeric inputs, use an extra `nextLine()` call after reading `int` or `double` inputs to clear the newline character.
+
+---
+
+## 💡 Technologies Used
+
+- Java 8+
+- Standard Input/Output
+- Object-Oriented Programming Principles
+
+---
+
+## 🧑‍💻 Author
+
+Developed by Mayank Singh - Feel free to contribute or suggest improvements.
