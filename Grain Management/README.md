@@ -47,3 +47,95 @@ Create a class `Solution` with the following:
 #### Output Format:
 
 - If count > 0:
+  ```
+  count
+  ```
+- Else:
+  ```
+  No Grains with matching names are found.
+  ```
+
+---
+
+### 2️⃣ Method: `getMinGrainFromMaharashtra(Grain[] arr)`
+
+- Input:
+  ```
+  `arr`: Array of `Grain` objects
+  ```
+- Output:
+  ```
+  Returns the Grain object from Maharashtra with the minimum quantity (qtyInQuintal)
+  If no such grain exists, return null
+  ```
+
+#### Output Format:
+
+- If result is not null:
+  ```
+  <grainId>
+  <grainName>
+  <state>
+  <qtyInQuintal>
+  ```
+- Else:
+  ```
+  No Grains with matching names are found
+  ```
+
+
+---
+
+## 🔡 Sample Input 1
+```
+4
+111
+Rice
+TamilNadu
+500
+112
+WHEAT
+Maharashtra
+300
+113
+RICE
+MAHARASHTRA
+200
+114
+Millet
+TamilnNadu
+400
+Rice
+```
+
+
+### ✅ Sample Output 1
+```
+2
+113
+RICE
+MAHARASHTRA
+200
+```
+
+---
+
+## 📝 Notes
+
+- All string comparisons (region, etc.) should be **case-insensitive**.
+- Avoid any extra formatting or additional output text.
+- You may need to handle the `Scanner` newline issue. If you use `nextInt()` or `nextDouble()`, add an extra `sc.nextLine()` before calling `nextLine()` to avoid input skipping.
+
+---
+
+## 💡 Technologies Used
+
+- Java 8+
+- OOP (Object-Oriented Programming)
+- Standard Input/Output
+
+---
+
+## 👨‍💻 Author
+
+Developed by Mayank Singh - Contributions and suggestions are welcome!
