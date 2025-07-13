@@ -1,51 +1,99 @@
-# Bike Showroom Management
+# 🏍️ Bike Showroom Management - Java Program
 
-## Problem Statement
+This Java program is designed to manage bikes in a showroom and perform the following operations:
 
-Create a class `Bike` with the below private attributes:
-- `id` - int
-- `quantity` - int
-- `name` - String
-- `price` - int
-
-Write getters, setters, and parameterized constructors in the above-mentioned attribute sequence as required.
-
-Create a class `Solution` with the `main` method. Implement two static methods - `findMaxPriceOfBike` and `searchBikeByName` in `Solution` class.
+1. **Find the bike with the maximum price.**
+2. **Search for a bike by its name** (case-insensitive).
 
 ---
 
-### findMaxPriceOfBike
+## 📌 Problem Statement
 
-Create a static method `findMaxPriceOfBike` in the `Solution` class.
+Create a class `Bike` with the following **private attributes**:
 
-This method will take an array of Bike objects and returns the bike Object with max price if found, else return 0 if not found.
+- `id` - `int`
+- `quantity` - `int`
+- `name` - `String`
+- `price` - `int`
 
----
+Include the following in the `Bike` class:
 
-### searchBikeByName
-
-Create a static method `searchBikeByName` in the `Solution` class. This method will take an array of Bike objects and Name as input and returns the Bike object having the mentioned Name if found else return null if not found.
-
-These methods should be called from the `main` method.
-
----
-
-### Write code to perform the following tasks:
-
-1. Take necessary input variable and call `findMaxPriceOfBike`. For this method - The main method should print the Bike Object with the max price as it is the returned value is greater than 0 else it should print `"No Bike found with mentioned attribute"`.
-
-2. Take the necessary input variable and call `searchBikeByName`. For this method - The main method should print the Bike object details as it is if the returned value is not null, or it should print `"No Bike found with mentioned attribute"`
+- A **parameterized constructor** (in the order listed above).
+- **Getters and setters** for all attributes.
 
 ---
 
-**Note**:
-- All String comparison needs to be case in-sensitive.
-- Do not use any static test or formatting for printing the result. Just invoke the method and print the result.
+## ✅ Requirements
+
+Create a class `Solution` with the following:
+
+### `main` method
+
+- Read input using `Scanner`.
+- Call the required static methods.
+- Display the results as per specifications.
 
 ---
 
-## Sample Input 1
-```text
+### 1️⃣ Method: `findMaxPriceOfBike(Bike[] arr)`
+
+- Input:
+  ```
+  `arr`: Array of `Bike` objects
+  ```
+- Output:
+  ```
+  Returns the `Bike` object with the maximum `price`
+  If no such object exists, return `null`
+  ```
+
+#### Output Format:
+
+- If a bike is found:
+```
+id-<id>
+quantity-<quantity>
+name-<name>
+price-<price>
+```
+- Else:
+No Bike found with mentioned attribute
+
+
+---
+
+### 2️⃣ Method: `searchBikeByName(Bike[] arr, String name)`
+
+- Input:
+  ```
+  `arr`: Array of `Bike` objects
+  `name`: The bike name to search for (case-insensitive)
+  ```
+- Output:
+  ```
+  Returns the `Bike` object with the matching name
+  If not found, return `null`
+  ```
+
+#### Output Format:
+
+- If a bike is found:
+```
+id-<id>
+quantity-<quantity>
+name-<name>
+price-<price>
+```
+- Else:
+```
+No Bike found with mentioned attribute
+```
+
+
+---
+
+## 🔡 Sample Input 1
+```
 4
 101
 2
@@ -66,9 +114,10 @@ Dominar
 Dominar
 ```
 
-## Sample Output 1
-```text
-Id-103
+
+### ✅ Sample Output 1
+```
+id-103
 quantity-11
 name-Royal Enfield
 price-300000
@@ -78,8 +127,10 @@ name-Dominar
 price-230000
 ```
 
-## Sample Input 2
-```text
+---
+
+## 🔡 Sample Input 2
+```
 4
 101
 0
@@ -100,13 +151,36 @@ MT
 Dominar
 ```
 
-## Sample Output 2
-```text
+
+### ✅ Sample Output 2
+```
 id-104
 quantity-0
 name-MT
 price-200000
 No Bike found with mentioned attribute
+```
+
+
+---
+
+## 📝 Notes
+
+- All **string comparisons** (e.g., bike name) should be **case-insensitive**.
+- Avoid any additional formatting — output should match the exact structure shown above.
+- If using `Scanner` and facing issues after reading integers (like skipping string input), add an extra `sc.nextLine()` after reading `int` or `double`.
+
+---
+
+### 🔄 Example Fix for Scanner Input Issue
+
+```java
+Scanner sc = new Scanner(System.in);
+int id = sc.nextInt();
+sc.nextLine(); // Clear newline
+String name = sc.nextLine();
+
+---
 
 ## 📝 Notes
 
