@@ -179,7 +179,7 @@ Scanner sc = new Scanner(System.in);
 int id = sc.nextInt();
 sc.nextLine(); // Clear newline
 String name = sc.nextLine();
-
+```
 ---
 
 ## 📝 Notes
