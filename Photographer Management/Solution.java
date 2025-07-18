@@ -46,8 +46,6 @@ class Photographer{
 }
 
 
-
-
 public class Solution {
     public static void main(String args[] ) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -89,7 +87,6 @@ public class Solution {
     
     
     
-    
     public static int countPhotographyBySpecialization(Photographer[] arr, String st){
         int m = 0;
         for(Photographer i : arr){
@@ -119,7 +116,7 @@ public class Solution {
             }
         }
         
-        if(second == Integer.MIN_VALUE){
+        if(second == Double.MIN_VALUE){
             return null;
         }
         
